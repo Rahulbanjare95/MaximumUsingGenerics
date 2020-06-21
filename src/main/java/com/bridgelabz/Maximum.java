@@ -27,4 +27,14 @@ public class Maximum {
         }
         return maxDouble;
     }
+    public String findMaxString(String firsposition,String secondPosition, String thirdPosition){
+        String maxString=firsposition;
+        if(secondPosition.compareTo(maxString)>0){
+            maxString=secondPosition;
+        }
+        if(thirdPosition.compareTo(maxString)>0){
+            maxString=thirdPosition;
+        }
+        return maxString;
+    }
 }

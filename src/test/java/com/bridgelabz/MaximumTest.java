@@ -45,5 +45,27 @@ public class MaximumTest {
         Double highest = maximum.findMaxDouble(0.1, 0.2, 0.3);
         Assert.assertEquals((Double) 0.3, highest);
     }
+
+    @Test
+    public void givenMaxString_AtFirstPosition_ShoulReturnFirstString(){
+        Maximum maximum=new Maximum();
+        String highest=maximum.findMaxString("Peach","Banana","Apple");
+        Assert.assertEquals((String) "Peach",highest);
+    }
+
+    @Test
+    public void givenMaxString_AtSecondPosition_ShoulReturnSecondString(){
+        Maximum maximum=new Maximum();
+        String highest=maximum.findMaxString("Java","Swift","Python");
+        Assert.assertEquals((String) "Swift",highest);
+    }
+    @Test
+    public void givenMaxString_AtThirdPosition_ShoulReturnThirdString(){
+        Maximum maximum=new Maximum();
+        String highest=maximum.findMaxString("Engineering","Commerce","Medicine");
+        Assert.assertEquals((String) "Medicine",highest);
+    }
+
+
 }
 
